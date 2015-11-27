@@ -2,7 +2,9 @@
 FROM ubuntu:14.04
 MAINTAINER José Augusto Paiva "zepspaiva@gmail.com"
 RUN apt-get update
-RUN sudo apt-get -y install git
+RUN sudo apt-get -y install \
+	git \
+	cmake
 
 RUN curl -sk https://raw.githubusercontent.com/torch/ezinstall/master/install-deps | bash
 RUN git clone https://github.com/torch/distro.git ~/torch --recursive
