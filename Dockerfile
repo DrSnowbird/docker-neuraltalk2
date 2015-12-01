@@ -14,7 +14,9 @@ RUN sudo apt-get -y install \
 RUN curl -sk https://raw.githubusercontent.com/torch/ezinstall/master/install-deps | bash
 RUN git clone https://github.com/torch/distro.git ~/torch --recursive
 RUN cd ~/torch; ./install.sh
-RUN source ~/.bashrc
+RUN /bin/bash -c "source ~/.bashrc"
+
+ENV PATH="$PATH:/root/torch/install/bin"
 
 RUN luarocks install nn
 RUN luarocks install nngraph
@@ -23,10 +25,10 @@ RUN luarocks install cutorch
 RUN luarocks install cunn
 
 # Only for training
-RUN sudo apt-get -y install libprotobuf-dev protobuf-compiler
+RUN apt-get -y install libprotobuf-dev protobuf-compiler
 RUN luarocks install loadcaffe
 
-RUN sudo apt-get -y install libhdf5-dev hdf5-tools python-dev python-pip
+RUN apt-get -y install libhdf5-dev hdf5-tools python-dev python-pip
 RUN pip install cython numpy h5py
 RUN luarocks install hdf5
 
