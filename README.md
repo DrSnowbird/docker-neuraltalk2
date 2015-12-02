@@ -7,6 +7,7 @@ Example for RHEL (CentOS)
 ```
 sudo yum install -y docker
 sudo gpasswd -a ${USER} docker
+newgrp docker
 sudo service docker start
 ```
 
