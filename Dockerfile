@@ -1,6 +1,6 @@
-# Version 1.0.2
+# Version 1.0.3
 FROM ubuntu:14.04
-#MAINTAINER José Augusto Paiva "zepspaiva@gmail.com"
+
 MAINTAINER Enrique Otero "enrique.otero@beeva.com"
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 RUN apt-get update
@@ -21,8 +21,6 @@ ENV PATH="$PATH:/root/torch/install/bin"
 RUN luarocks install nn
 RUN luarocks install nngraph
 RUN luarocks install image
-#RUN luarocks install cutorch
-#RUN luarocks install cunn
 
 # Only for training
 RUN apt-get -y install libprotobuf-dev protobuf-compiler
@@ -38,6 +36,3 @@ WORKDIR /home/neuraltalk2
 
 RUN wget http://cs.stanford.edu/people/karpathy/neuraltalk2/checkpoint_v1_cpu.zip
 RUN unzip checkpoint_v1_cpu.zip
-
-WORKDIR /home/neuraltalk2/vis
-RUN python -m SimpleHTTPServer
