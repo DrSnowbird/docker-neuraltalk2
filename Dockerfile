@@ -21,8 +21,8 @@ ENV PATH="$PATH:/root/torch/install/bin"
 RUN luarocks install nn
 RUN luarocks install nngraph
 RUN luarocks install image
-RUN luarocks install cutorch
-RUN luarocks install cunn
+#RUN luarocks install cutorch
+#RUN luarocks install cunn
 
 # Only for training
 RUN apt-get -y install libprotobuf-dev protobuf-compiler
