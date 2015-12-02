@@ -12,7 +12,12 @@ sudo service docker start
 
 ### Build image
 ```
-docker build https://github.com/beeva-enriqueotero/docker-neuraltalk2.git
+docker build -t neuraltalk2 https://github.com/beeva-enriqueotero/docker-neuraltalk2.git
+```
+
+### Run container
+```
+docker run -i -t neuraltalk2 /bin/bash
 ```
 
 ### TO DO
