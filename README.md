@@ -24,4 +24,5 @@ docker run -i -t neuraltalk2 /bin/bash
 
 ### TO DO
 Add GPU support
+Add automated build to Docker Hub
 
