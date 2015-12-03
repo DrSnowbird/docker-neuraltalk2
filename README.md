@@ -18,7 +18,7 @@ Requires `git`
 ```
 docker build -t neuraltalk2 https://github.com/beeva-enriqueotero/docker-neuraltalk2.git
 ```
-* Or pull it from DockerHub:
+* Or pull it from Docker Hub (>3GB):
 ```
 docker pull beevaenriqueotero/docker-neuraltalk2
 ```
@@ -26,6 +26,10 @@ docker pull beevaenriqueotero/docker-neuraltalk2
 ### Run container
 ```
 docker run -i -t neuraltalk2 /bin/bash
+```
+or
+```
+docker run -i -t beevaenriqueotero/docker-neuraltalk2 /bin/bash
 ```
 
 ### TO DO
