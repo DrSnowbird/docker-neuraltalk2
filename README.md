@@ -32,6 +32,12 @@ or
 docker run -i -t beevaenriqueotero/docker-neuraltalk2 /bin/bash
 ```
 
+### More info
+
+* Some quickstart demo scripts: https://gist.github.com/beeva-enriqueotero/42156aefa172fc04a392
+
+* Yet another docker-neuraltalk2 project, apparently cleaner, lighter and ARM-oriented: https://github.com/SaMnCo/docker-neuraltalk2
+
 ### TO DO
 Add GPU support
 
