@@ -36,7 +36,7 @@ docker run -i -t beevaenriqueotero/docker-neuraltalk2 /bin/bash
 
 * Some quickstart demo scripts: https://gist.github.com/beeva-enriqueotero/42156aefa172fc04a392
 
-* Another docker-neuraltalk2 project, apparently cleaner, lighter and ARM-oriented. Though I couldn't make it work :( https://github.com/SaMnCo/docker-neuraltalk2
+* Another docker-neuraltalk2 project, apparently cleaner, lighter and ARM-oriented. Though <a href="https://github.com/SaMnCo/docker-neuraltalk2/issues/2">I couldn't make it work :(</a> https://github.com/SaMnCo/docker-neuraltalk2
 
 * And yet another dockerized version of neuraltalk2. This one oriented to expose it as a simple REST interface: https://github.com/jacopofar/neuraltalk2-web
 
