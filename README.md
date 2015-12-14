@@ -36,7 +36,7 @@ docker run -i -t beevaenriqueotero/docker-neuraltalk2 /bin/bash
 
 * Some quickstart demo scripts: https://gist.github.com/beeva-enriqueotero/42156aefa172fc04a392
 
-* Another docker-neuraltalk2 project, lighter (1.5GB), with GPU support, and also intended to work on a Raspberry2. Though according to my first tests much slower than this one in CPU case.
+* Another docker-neuraltalk2 project, lighter (1.5GB), with GPU support, and also intended to work on a Raspberry2: https://github.com/SaMnCo/docker-neuraltalk2 Though according to my first tests much slower than this one in CPU case.
 
 * And yet another dockerized version of neuraltalk2. Oriented to expose it as a simple REST interface: https://github.com/jacopofar/neuraltalk2-web
 
